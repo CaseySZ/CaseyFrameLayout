@@ -8,10 +8,21 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let view = UIView()
+        view.backgroundColor = .blue
+        view.centerX = self.view.centerX
+        view.width = 100
+        view.bottom = self.view.bottom
+        view.heigth = 100
+        
+        self.view.addSubview(view)
         
     }
     

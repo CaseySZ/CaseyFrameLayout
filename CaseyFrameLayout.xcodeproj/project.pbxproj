@@ -13,7 +13,6 @@
 		C9C29FC0219D6D5400141221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C29FBF219D6D5400141221 /* Assets.xcassets */; };
 		C9C29FC3219D6D5400141221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C29FC1219D6D5400141221 /* LaunchScreen.storyboard */; };
 		C9C29FCD219D6D7D00141221 /* UIViewFrameHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C29FCB219D6D7D00141221 /* UIViewFrameHandle.swift */; };
-		C9C29FCE219D6D7D00141221 /* UIViewSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C29FCC219D6D7D00141221 /* UIViewSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		C9C29FC2219D6D5400141221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9C29FC4219D6D5400141221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C29FCB219D6D7D00141221 /* UIViewFrameHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewFrameHandle.swift; sourceTree = "<group>"; };
-		C9C29FCC219D6D7D00141221 /* UIViewSearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				C9C29FCB219D6D7D00141221 /* UIViewFrameHandle.swift */,
-				C9C29FCC219D6D7D00141221 /* UIViewSearchView.swift */,
 			);
 			path = FrameLayout;
 			sourceTree = "<group>";
@@ -152,7 +149,6 @@
 				C9C29FBB219D6D5400141221 /* ViewController.swift in Sources */,
 				C9C29FB9219D6D5400141221 /* AppDelegate.swift in Sources */,
 				C9C29FCD219D6D7D00141221 /* UIViewFrameHandle.swift in Sources */,
-				C9C29FCE219D6D7D00141221 /* UIViewSearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
