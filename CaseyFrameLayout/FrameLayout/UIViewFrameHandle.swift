@@ -21,7 +21,7 @@ extension UIView {
             
             self.statusCenternX = false
             self.statusRight = false
-            self.frame = CGRect.init(x: newValue, y: self.y, width: self.width, height: self.heigth)
+            self.frame = CGRect.init(x: newValue, y: self.y, width: self.width, height: self.height)
         }
         
         
@@ -37,7 +37,7 @@ extension UIView {
             
             self.statusCenternY = false
             self.statusBottom = false
-            self.frame = CGRect.init(x: self.x, y: newValue, width: self.width, height: self.heigth)
+            self.frame = CGRect.init(x: self.x, y: newValue, width: self.width, height: self.height)
         }
         
     }
@@ -53,16 +53,16 @@ extension UIView {
             if self.statusCenternX {
                 
                 let centerX = self.centerX
-                self.frame = CGRect.init(x: centerX-newValue/2, y: self.y, width: newValue, height: self.heigth)
+                self.frame = CGRect.init(x: centerX-newValue/2, y: self.y, width: newValue, height: self.height)
                 
             } else if self.statusRight {
                 
                 let right = self.right
-                self.frame = CGRect.init(x: right-newValue, y: self.y, width: newValue, height: self.heigth)
+                self.frame = CGRect.init(x: right-newValue, y: self.y, width: newValue, height: self.height)
                 
             }else {
 
-                self.frame = CGRect.init(x: self.x, y: self.y, width: newValue, height: self.heigth)
+                self.frame = CGRect.init(x: self.x, y: self.y, width: newValue, height: self.height)
             }
             cleanStatusHorizontal()
         }
@@ -70,7 +70,7 @@ extension UIView {
     }
     
     
-    var heigth: CGFloat {
+    var height: CGFloat {
         
         get {
             
@@ -108,7 +108,7 @@ extension UIView {
             
             cleanStatusHorizontal()
             self.statusCenternX = true
-            self.frame = CGRect.init(x:newValue - self.width/2, y: self.y, width: self.width, height: self.heigth)
+            self.frame = CGRect.init(x:newValue - self.width/2, y: self.y, width: self.width, height: self.height)
             
         }
         
@@ -118,14 +118,14 @@ extension UIView {
         
         get {
             
-            return self.y + self.heigth/2
+            return self.y + self.height/2
         }
         
         set{
             
             cleanStatusVertical()
             self.statusCenternY = true
-            self.frame = CGRect.init(x:self.x, y: newValue - self.heigth/2, width: self.width, height: self.heigth)
+            self.frame = CGRect.init(x:self.x, y: newValue - self.height/2, width: self.width, height: self.height)
             
         }
         
@@ -143,9 +143,9 @@ extension UIView {
             cleanStatusHorizontal()
             self.statusLeft = true
             if self.statusRight {
-                self.frame = CGRect.init(x:newValue, y: self.y, width: self.right - newValue, height: self.heigth)
+                self.frame = CGRect.init(x:newValue, y: self.y, width: self.right - newValue, height: self.height)
             }else {
-                self.frame = CGRect.init(x:newValue, y: self.y, width: self.width, height: self.heigth)
+                self.frame = CGRect.init(x:newValue, y: self.y, width: self.width, height: self.height)
             }
         }
         
@@ -163,9 +163,9 @@ extension UIView {
             cleanStatusHorizontal()
             self.statusRight = true
             if self.statusLeft {
-                self.frame = CGRect.init(x:self.left, y: self.y, width: newValue - self.left, height: self.heigth)
+                self.frame = CGRect.init(x:self.left, y: self.y, width: newValue - self.left, height: self.height)
             }else {
-                self.frame = CGRect.init(x:newValue-self.width, y: self.y, width: self.width, height: self.heigth)
+                self.frame = CGRect.init(x:newValue-self.width, y: self.y, width: self.width, height: self.height)
             }
         }
         
@@ -186,7 +186,7 @@ extension UIView {
             if self.statusBottom {
                 self.frame = CGRect.init(x:self.x, y: newValue, width: self.width, height: self.bottom - newValue)
             }else{
-                self.frame = CGRect.init(x:self.x, y: newValue, width: self.width, height: self.heigth)
+                self.frame = CGRect.init(x:self.x, y: newValue, width: self.width, height: self.height)
             }
             
         }
@@ -197,7 +197,7 @@ extension UIView {
         
         get {
             
-            return self.y + self.heigth
+            return self.y + self.height
         }
         
         set{
@@ -210,7 +210,7 @@ extension UIView {
                 
             }else {
                 
-                self.frame = CGRect.init(x:self.x, y: newValue - self.heigth, width: self.width, height: self.heigth)
+                self.frame = CGRect.init(x:self.x, y: newValue - self.height, width: self.width, height: self.height)
             }
         }
         

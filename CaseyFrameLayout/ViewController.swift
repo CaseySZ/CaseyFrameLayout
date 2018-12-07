@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         view.centerX = self.view.centerX
         view.width = 100
         view.bottom = self.view.bottom
-        view.heigth = 100
+        view.height = 100
         
         self.view.addSubview(view)
         
